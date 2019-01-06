@@ -1,0 +1,244 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i&subset=latin-ext');
+
+/* TEMP */
+
+h1.center {
+	color: black;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+}
+
+.compressor {
+	display: flex;
+}
+
+.compressor span {
+	display: inline-block;
+	white-space: pre;
+}
+
+.compressor .remain {
+	overflow-x: visible;
+	vertical-align: top; /* not sure why by overflow-x fudges alignment up */
+}
+
+.compressor .expand {
+	animation-name: expand;
+	animation-delay: 300ms;
+}
+
+.compressor .compress {
+	animation-name: compress;
+}
+
+.compressor .compress,
+.compressor .expand {
+	overflow-x: hidden;
+	animation-timing-function: linear;
+	animation-duration: 400ms;
+	animation-fill-mode: both;
+}
+
+/* END TEMP */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 2vw;
+	font-weight: normal;
+	font-family: 'Montserrat';
+
+	--red: #ea3f28;
+	--light: #efefef;
+	--dark: #333333;
+}
+
+a {
+	color: var(--dark);
+	text-decoration: none;
+}
+
+.minor {
+	font-size: .7em;
+}
+
+.slide {
+	box-sizing: border-box;
+	min-width: 100vw;
+	min-height: 100vh;
+	margin: 0;
+	padding: 8%;
+	display: flex;
+	flex-direction: row; /* Automatic .content columns */
+	justify-content: space-around; /* with automatic gutters */
+	align-items: center;
+}
+
+.slide > *:first-child,
+.content > *:first-child {
+	margin-top: 0;
+}
+
+.slide > *:last-child,
+.content > *:last-child {
+	margin-bottom: 0;
+}
+
+.slide:nth-of-type(odd) {
+	background-color: var(--red);
+	color: var(--light);
+	/* border: 2vw solid var(--red); */
+}
+
+.slide:nth-of-type(even) {
+	background-color: var(--light);
+	color: var(--red);
+	/* border: 2vw solid var(--light); */
+}
+
+.slide:first-of-type {
+	height: 100vh;
+	padding: 0;
+	background-color: var(--light);
+	/* border: 2vw solid var(--red); */
+	flex-direction: column;
+	justify-content: center;
+	overflow-y: hidden;
+}
+
+.slide.footer,
+.slide.submission-confirmation {
+	background-color: var(--dark);
+	color: var(--light);
+}
+
+.slide.footer a,
+.slide.submission-confirmation a {
+	color: var(--red);
+}
+
+.slide.submission-confirmation:not(:target) {
+	display: none;
+}
+
+.slide .content {
+	padding: 15px;
+}
+
+.slide .logo {
+	width: 50%; /* `50vw` to stop resizing when borders come in */
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1; /* in front of borderline text */
+	/* will-change: margin-top; */ /* Only animates once, so not a good idea */
+}
+
+picture.logo img {
+	width: 100%;
+}
+
+/* BORDERLINE TEXT (TEXT ON THE BORDER) */
+
+.borderline {
+	position: absolute;
+	margin: 0;
+	font-size: 2.8vw;
+	line-height: .8em;
+	letter-spacing: 1vw;
+	text-transform: uppercase;
+	font-style: italic;
+	/* color: var(--light); */ /* Doesn't allow @keyframes (which are applied to parent) to override */
+}
+
+.borderline.top {
+	top: -1px;
+}
+
+.borderline.bottom {
+	bottom: -1.5px;
+}
+
+/* NUDE PICS! */
+
+.logo.censor:hover img {
+	content: url('img/saf_logo_100.png');
+	width: 100%;
+	image-rendering: pixelated;
+}
+
+.censor:hover::after {
+	content: 'Censored';
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	padding-left: .5em;
+	padding-right: .5em;
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	font-size: 200%;
+	transform: rotateZ(-10deg);
+}
+
+/* TYPOGRAPHIC WHATNOTTERY */
+
+.never-italic {
+	font-style: normal;
+}
+
+/* FORM */
+input {
+	display: inline-block;
+	width: 100%;
+	font-size: 1em;
+	border: .3em solid black;
+	padding: .3em;
+}
+
+input + input,
+label + label,
+input + label,
+label + input {
+	margin-top: 2em;
+}
+
+[type=submit] {
+	cursor: pointer;
+}
+
+label {
+	display: block;
+}
+
+input::placeholder,
+input::-webkit-input-placeholder {
+	/* color: inherit; */
+	color: white;
+	opacity: .8;
+}
+
+@keyframes compress {
+	0% {
+		max-width: 100%;
+	}
+
+	100% {
+		max-width: 0;
+		display: none;
+	}
+}
+
+@keyframes expand {
+	0% {
+		display: none;
+		max-width: 0;
+	}
+
+	100% {
+		max-width: 100%;
+	}
+}
