@@ -3,15 +3,14 @@
 
 html,
 body {
-	margin: 0;
-	padding: 0;
-	font-size: 2vw;
-	font-weight: normal;
-	font-family: 'Raleweb';
-	font-weight: 900;
-
 	--light: #efefef;
 	--dark: #333333;
+	--highlight: #555555;
+
+	color: var(--dark);
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6, .logo {
@@ -19,8 +18,14 @@ h1, h2, h3, h4, h5, h6, .logo {
 	font-feature-settings: "lnum" 1;
 }
 
+.logotype {
+	font-family: 'Raleweb';
+	font-weight: 900;
+	font-size: 24pt;
+}
+
 a {
-	color: var(--dark);
+	color: var(--highlight);
 	text-decoration: none;
 }
 
