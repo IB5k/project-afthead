@@ -1,0 +1,130 @@
+/* RALEWAY REGUAR */
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-thin-web.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-extralight-web.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-light-web.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-regular-web.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-medium-web.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-semibold-web.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-bold-web.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-extrabold-web.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-black-web.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+/* RALEWAY ITALIC */
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-thinitalic-web.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-extralightitalic-web.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-lightitalic-web.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-italic-web.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-mediumitalic-web.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-semibolditalic-web.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-bolditalic-web.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-extrabolditalic-web.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Raleweb";
+  src: url('./raleway-blackitalic-web.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
