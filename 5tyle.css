@@ -1,16 +1,25 @@
 /* Google Fonts */
 @import url('./fonts/typography.css');
 
-html,
-body {
-  --light: #efefef;
+html {
+  --light: #fefefe;
   --dark: #333333;
   --highlight: #555555;
 
+  --std-padding: 20px;
+
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--light);
   color: var(--dark);
   margin: 0;
-  padding: 0;
+  padding: var(--std-padding);
+  padding-top: 0; /* handled in header */
   font-size: 16px;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6, .logo {
@@ -22,6 +31,20 @@ h1, h2, h3, h4, h5, h6, .logo {
   font-family: 'Raleweb';
   font-weight: 900;
   font-size: 24pt;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: var(--std-padding) 0 0 0;
+  margin: 0 var(--std-padding) var(--std-padding) var(--std-padding);
+  background-color: var(--light);
+  background-clip: border-box;
+  box-sizing: border-box;
+  border-bottom: .4em solid var(--dark);
 }
 
 a {
@@ -35,10 +58,10 @@ a {
 
 .slide {
   box-sizing: border-box;
-  min-width: 100vw;
+  width: 100%;
   min-height: 100vh;
-  margin: 0;
-  padding: 8%;
+  margin: var(--std-padding) 0;
+  padding: 0;
   display: flex;
   flex-direction: row; /* Automatic .content columns */
   justify-content: space-around; /* with automatic gutters */
