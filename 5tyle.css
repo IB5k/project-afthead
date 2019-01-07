@@ -27,12 +27,32 @@ h1, h2, h3, h4, h5, h6, .logo {
   font-feature-settings: "lnum" 1;
 }
 
-.logotype {
+.logotype,
+span.co,
+h2.department {
   font-family: 'Raleweb';
-  font-weight: 900;
   font-size: 24pt;
   margin: 0;
 }
+
+.logotype,
+span.co {
+  font-weight: 900;
+  content: 'IB5k ';
+  z-index: -1;
+  position: relative;
+  text-transform: none;
+}
+
+span.co + h2.department {
+  display: inline-block;
+  font-weight: 300;
+  position: -webkit-sticky;
+  position: sticky;
+  top: var(--std-padding);
+}
+
+
 
 header {
   position: fixed;
@@ -45,6 +65,7 @@ header {
   background-clip: border-box;
   box-sizing: border-box;
   border-bottom: .4em solid var(--dark);
+  z-index: 0;
 }
 
 a {
@@ -62,14 +83,10 @@ a {
   min-height: 100vh;
   margin: var(--std-padding) 0;
   padding: 0;
-  display: flex;
-  flex-direction: row; /* Automatic .content columns */
-  justify-content: space-around; /* with automatic gutters */
-  align-items: center;
 }
 
-.slide .content {
-  padding: 15px;
+.slide:first-of-type {
+  margin-top: 80px; /* accomodate header; sloppy */
 }
 
 /* TYPOGRAPHIC WHATNOTTERY */
