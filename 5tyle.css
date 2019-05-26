@@ -43,6 +43,8 @@ h2.department {
 
 .logotype,
 span.co {
+  white-space: nowrap;
+  overflow: hidden;
   font-weight: 900;
   content: 'IB5k ';
   z-index: -1;
