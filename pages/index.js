@@ -3,7 +3,7 @@ import Acronym from '../components/acronym'
 export default () => (
   <html>
   <body>
-    <header class="compressor logo">
+    <header className="compressor logo">
       <h1 class="logotype">
         <Acronym />
       </h1>
