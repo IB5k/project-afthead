@@ -1,0 +1,19 @@
+{
+  "name": "project-afthead",
+  "version": "0.0.0",
+  "description": "A new ib5k.com",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IB5k/project-afthead.git"
+  },
+  "author": "Jacob Ford",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/IB5k/project-afthead/issues"
+  },
+  "homepage": "https://github.com/IB5k/project-afthead#readme"
+}
