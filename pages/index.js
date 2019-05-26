@@ -5,7 +5,7 @@ export default () => (
   <html>
   <Head>
     <title>IB5k</title>
-    <link rel="stylesheet" type="text/css" href="5tyle.css" />
+    <link rel="stylesheet" type="text/css" href="/static/5tyle.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </Head>
   <body>
