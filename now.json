@@ -3,8 +3,8 @@
   "name": "project-afthead",
   "builds": [
     {
-      "src": "**/*",
-      "use": "@now/static"
+      "src": "package.json",
+      "use": "@now/next"
     }
   ],
   "github": {
