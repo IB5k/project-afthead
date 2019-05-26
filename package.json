@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/IB5k/project-afthead/issues"
   },
-  "homepage": "https://github.com/IB5k/project-afthead#readme"
+  "homepage": "https://github.com/IB5k/project-afthead#readme",
+  "devDependencies": {
+    "now": "^15.3.0"
+  }
 }

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "project-afthead",
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@now/static"
+    }
+  ],
+  "github": {
+    "silent": true
+  }
+}
